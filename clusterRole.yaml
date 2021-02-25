@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: test-clusterrole
+rules:
+- apiGroups:
+  - argoproj.io
+  resources:
+  - applications
+  - argocds
+  - route
+  verbs:
+  - get
+  - create
+  - patch
