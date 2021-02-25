@@ -14,5 +14,6 @@ spec:
     path: helm-hooks
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
-    version: v3
+    helm:
+      version: v3
 

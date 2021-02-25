@@ -14,4 +14,5 @@ spec:
     path: helm-guestbook
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
-    version: v2
+    helm:
+      version: v2
